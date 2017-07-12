@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdfa: <http://www.w3.org/ns/rdfa#>.
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix r2h: <http://rdf2h.github.io/2015/rdf2h#>.
+@prefix s: <http://schema.org/>.
+@prefix lodide: <http://ontology.lodide.io/>.
+@prefix dc: <http://dublincore.org/2012/06/14/dcelements#>.
+@prefix schema: <http://schema.org/>.
+
+<> a lodide:Exercise;
+    lodide:intro "<h2>LodIDE</h2>\n            <p>If you don't know what to do here, check out one of the <a class=\"exerciseIndexLink\" href=\"exercise-index.html\">exercises</a>.</p>";
+    lodide:finalWords "<ul>\n                    <li>When you're finished press the \"Run my code\"-button.\n                    The results will show up below the button.</li>\n                </ul>";
+    lodide:dataSource _:b31.
+_:b31 lodide:taskSolutionResourceCurrent <https://lindas-data.ch/sparql>;
+    lodide:sourceType lodide:sparqlSource;
+    lodide:taskSolutionCodeCurrent "SELECT * WHERE {?s ?p ?o}\nLIMIT 10".
+<> lodide:dataProcessing _:b32.
+_:b32 lodide:taskSolutionCodeCurrent "alert(\"because of https://github.com/edulod/lodide/issues/19 this is getting the wrong result format\");\nvar res = j.results.bindings;\nvar labels = [];\nfor (k in res) {\n    labels.push(res[k].s.value);\n}\nalert(labels);".
+<> lodide:dataRendering _:b33.
+_:b33 lodide:taskSolutionCode "";
+    lodide:taskSolutionCodeCurrent "";
+    lodide:taskSolutionResource <>;
+    lodide:taskSolutionResourceCurrent "".
