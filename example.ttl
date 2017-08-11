@@ -11,7 +11,7 @@
 @prefix schema: <http://schema.org/>.
 
 <> a lodide:Exercise;
-    lodide:intro "<h2>Film titles in DBpedia</h2>\n            <p>In this example you see how to write a SPARQL CONSTRUCT query to get film titles from DBpedia.</p>";
+    lodide:intro "<h2>Modified Film titles example for Luis</h2>\n            <p>In this example you see how to write a SPARQL CONSTRUCT query to get film titles from DBpedia.</p>";
     lodide:finalWords "<ul>\n                    <li>Press the \"Run my code\"-button to verify your triple.</li>\n                </ul>";
     lodide:dataSource _:b30.
 _:b30 lodide:taskDescription "Write a SPARQL query CONSTRUCT to create an RDF graph with ten film titles, using the DBpedia SPARQL endpoint.<br><br>\n                                  For this exercise you need to create ten triples, one for each film, that have the movie as subject, <code>rdfs:label</code> as predicate, and its\n                                  label as object. This exercise is very similar to <a href=\"/?exercise=http://lodide.io/exercises/film.ttl\">the SPARQL select exercise</a>.\n                                  Using the same WHERE condition, you need to replace the SELECT with a <a href=\"https://www.w3.org/TR/rdf-sparql-query/#construct\">CONSTRUCT</a>.";
